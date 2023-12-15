@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmx App</title>
+    <!-- Include htmx library -->
+    <script src="https://unpkg.com/htmx.org@1.6.1/dist/htmx.js"></script>
+</head>
+<body>
+
+    <h1>htmx App</h1>
+
+    <!-- Button to trigger htmx request -->
+    <button hx-get="http://127.0.0.1:8080/toggle" hx-target="#message" hx-swap="innerHTML">Toggle Message</button>
+
+    <!-- Paragraph to be toggled -->
+    <p id="message">This is a hidden message.</p>
+
+</body>
+</html>
