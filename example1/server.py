@@ -9,7 +9,13 @@ def index():
 @app.route('/toggle')
 def toggle_message():
     # Toggle the visibility of the message
-    return "<p>This is a visible message.</p>"
+    return "<p>This is a visible message.</p>"   
+
+
+@app.route('/clicked')
+def checking():
+    # Toggle the visibility of the message
+    return "<p>wowy.</p>" 
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
